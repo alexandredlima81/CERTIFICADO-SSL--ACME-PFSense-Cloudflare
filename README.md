@@ -36,48 +36,7 @@ Essa abordagem será documentada nos próximos passos, detalhando a configuraç�
 
 # Ambiente Cloudflare
 
-## Criar os registro DNS do tipo TXT (Manualmente)
-
-**1.	Acesse o painel da Cloudflare:**
-
-  o	  Vá para **Cloudflare Dashboard** \
-  o	  Selecione seu domínio **nomedodominio.com** 
-
-**2.	Criar os registros TXT:**
-
-  o	  Vá para **DNS** → Adicionar Registro \
-  o	  Escolha o tipo **TXT** \
-  o	  Em **Nome**, coloque:
-
->
->_acme-challenge.nomedodominio.com
->
-
-o	  Em **Conteúdo**, adicione o código fornecido pelo Let's Encrypt:
-
->
->abc123xyz
->
-o	  Clique em Salvar
-
-**3.	Criar o segundo registro TXT:**
-
-  o  	Adicione um novo registro TXT com o mesmo nome:
->
->_acme-challenge.hirostack.com
->
-  o  	No conteúdo, coloque o segundo código gerado:
-
->
->def456uvw
->
-
-  o  	Salve novamente.
-
-**4.	Esperar a propagação (pode levar alguns minutos).**
-
-
-## Criando um API Token no Cloudflare
+## 1️⃣ Criando um Token de API no Cloudflare
 
 # Ambiente pfSense
 
