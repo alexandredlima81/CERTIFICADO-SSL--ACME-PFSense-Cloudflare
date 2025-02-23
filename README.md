@@ -52,9 +52,11 @@ O pfSense precisa de permissões para modificar os registros DNS automaticamente
 **4.** Escolha **"Create Cutom Token"** clicando em **"Get started"**.
 
 **5.** Defina um Nome em **"Token Name"**:
-   
-**6.** Defina as Permissões em **"Permissios"** como: 
-  - **Zona** → **DNS** → **Edit** (Permitindo criar e excluir registros TXT para validação).
+   - Inclua um nome de referência, (ex: **pfSense**).
+
+**6.** Defina as Permissões em **"Permissios"**:
+  - Permitindo criar e excluir registros TXT para validação.
+  - **Zona** → **DNS** → **Edit** 
     
 **7.** Selecione os Recursos da Zona em **"Zone Resources"**: 
   - Inclua apenas as zonas específicas que o Let's Encrypt usará, (ex: **nomedoseudominio.com**).
