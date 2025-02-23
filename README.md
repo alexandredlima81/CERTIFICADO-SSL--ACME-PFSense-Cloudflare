@@ -80,7 +80,8 @@ O pfSense precisa de permissões para modificar os registros DNS automaticamente
 >Pois qualquer pessoa com esse token pode executar as ações autorizadas contra os recursos aos quais o token tem acesso.
 >
 
-**12.**Valide testando o token
+**12.** Valide testando o token
+
 Para confirmar que seu token está funcionando corretamente, copie e cole o comando CURL como no exemplo de saida apresentado pela Cloudflare em um terminal.
 
 ```
