@@ -75,8 +75,9 @@ O pfSense precisa de permissões para modificar os registros DNS automaticamente
 >
 >⚠️**Aviso!**⚠️
 >
->  O segredo do token é mostrado apenas uma vez. Não armazene o segredo em texto simples onde outros possam acessá-lo. \
->Recomendo utlizar cofres de senha, como por exemplo KeePassXC Password Manager para uso local ou em integrações de CI\CD utilizar ferramentas como AWS Secrets Manager, HashiCorp Vault entre outras. \
+>  O segredo do token é mostrado apenas uma vez.
+>Não armazene o segredo em texto simples onde outros possam acessá-lo. \
+>Recomendo utlizar cofres de senha, como por exemplo KeePassXC Password Manager para uso local ou em outras integrações de CI\CD por exemplo, utilizar ferramentas como AWS Secrets Manager, HashiCorp Vault entre outras... \
 >Pois qualquer pessoa com esse token pode executar as ações autorizadas contra os recursos aos quais o token tem acesso.
 >
 
