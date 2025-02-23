@@ -31,3 +31,14 @@ Se a validação for bem-sucedida, o certificado é emitido.
 ✅ Automatização possível com provedores de DNS compatíveis (Cloudflare, AWS Route 53, GoDaddy, etc.)
 
 Essa abordagem será documentada nos próximos passos, detalhando a configuração do ACME (Let's Encrypt) no pfSense, integração com Cloudflare.
+
+## (EM ANDAMENTO)
+
+
+## Considerações Finais
+(EM ANDAMENTO)
+## Links úteis
+
+https://letsencrypt.org/docs/challenge-types/?utm_source=chatgpt.com
+https://community.cloudflare.com/t/cloudflare-lets-encrypt-pfsense/118198/5?utm_source=chatgpt.com
+https://wolffhaven.gitlab.io/wolffhaven_icarus_test/2017/11/07/intranet-ssl-certificate-for-pfsense-using-lets-encrypt--cloudflare/?utm_source=chatgpt.com
