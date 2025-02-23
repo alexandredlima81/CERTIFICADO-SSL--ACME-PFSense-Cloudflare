@@ -11,8 +11,8 @@ Para contornar essa limitação, podemos utilizar a validação via DNS-01, que 
 ## Pré-requisitos
 Antes de iniciar o processo de emissão do certificado, certifique-se de que possui:
 
-✅ Um domínio registrado e gerenciado em um provedor compatível (exemplo: Cloudflare).
-✅ Acesso administrativo ao pfSense, com o pacote ACME instalado.
+✅ Um domínio registrado e gerenciado em um provedor compatível (exemplo: Cloudflare).\
+✅ Acesso administrativo ao pfSense, com o pacote ACME instalado.\
 ✅ Credenciais de API do provedor de DNS para automação da validação DNS-01.
 
 
