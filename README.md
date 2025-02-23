@@ -6,7 +6,7 @@ Quando um domínio (nomedodominio.com) é público ou possui suporte à validaç
 
 Por padrão, a validação e emissão dos certificados pelo Let's Encrypt utilizam o HTTP-01 Challenge, que exige a exposição da porta 80 para que a autoridade certificadora valide a posse do domínio. No entanto, por razões de segurança, nem sempre é viável expor essa porta.
 
-Para contornar essa limitação, podemos utilizar a validação via DNS-01, que elimina a necessidade de portas abertas.
+Para contornar essa limitação, podemos utilizar a validação via DNS-01 Challenge, que elimina a necessidade de portas abertas.
 
 ## Pré-requisitos
 Antes de iniciar o processo de emissão do certificado, certifique-se de que possui:
