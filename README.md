@@ -16,7 +16,7 @@ Antes de iniciar o processo de emissão do certificado, certifique-se de que pos
 ✅ Credenciais de API do provedor de DNS para automação da validação DNS-01.
 
 
-## O que é DNS-01 e como funciona?
+## O que é DNS-01 Challenge e como funciona?
 O DNS-01 Challenge é um método de validação usado pelo Let's Encrypt e outras Autoridades Certificadoras (CAs) para comprovar a posse de um domínio antes de emitir um certificado SSL.
 
 ## Fluxo da validação DNS-01:
