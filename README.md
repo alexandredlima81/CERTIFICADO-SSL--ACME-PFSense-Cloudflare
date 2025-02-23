@@ -90,6 +90,19 @@ curl -X GET "https://api.cloudflare.com/client/v4/user/tokens/verify" \
      -H "Authorization: Bearer 7asdffhS4tP4fQWErtYdZ5tr9Y0tRt7_FJKUNBd" \
      -H "Content-Type:application/json"
 ```
+## **Obtendo Token Zone ID e Token Account ID no Cloudflare**
+
+O **Zone ID** e o **Account ID** são informações adicionais disponíveis na aba **Overview** seguimento **API** do domínio no Cloudflare. Esses dados são necessários para as próximas etapas de configuração e autenticação do ACME no pfSense.
+
+**1.** **Zone ID** e o **Account ID**
+  Para encontrar o **Zone ID** e o **Account ID**:
+  - Acesse o painel do **Cloudflare**.
+  - Clique no **domínio** desejado (ex:**nomedoseudominio.com**).
+  - A aba **Overview**, por default estara aberta, o **Zone ID** e **Account ID** se encontram na parte inferior a direita.
+  - Copie o **Zone ID** e **Account ID** para um local seguro.
+
+
+
 
 # PRÓXIMOS PASSOS (EM ANDAMENTO)
 
