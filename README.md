@@ -42,6 +42,7 @@ Essa abordagem será documentada nos próximos passos, detalhando a configuraç�
 https://letsencrypt.org/docs/challenge-types/?utm_source=chatgpt.com \
 https://letsencrypt.org/docs/client-options/ \
 https://docs.netgate.com/pfsense/en/latest/packages/acme/index.html \
+https://docs.netgate.com/pfsense/en/latest/certificates/index.html \
 https://developers.cloudflare.com/fundamentals/api/get-started/create-token/ \
 https://community.cloudflare.com/t/cloudflare-lets-encrypt-pfsense/118198/5?utm_source=chatgpt.com \
 https://wolffhaven.gitlab.io/wolffhaven_icarus_test/2017/11/07/intranet-ssl-certificate-for-pfsense-using-lets-encrypt--cloudflare/?utm_source=chatgpt.com
