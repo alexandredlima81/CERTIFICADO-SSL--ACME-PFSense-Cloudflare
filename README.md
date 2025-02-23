@@ -68,13 +68,15 @@ Tela de resumo do token exibindo os recursos e permissões selecionados
 Selecione Criar Token para gerar o segredo do token.
 
 Copie o segredo para um local seguro.
+
 >
 >**Aviso!**
 >
->  O segredo do token é mostrado apenas uma vez. Não armazene o segredo em texto simples onde outros possam acessá-lo.
->Recomendo utlizar cofres de senha, como por exemplo KeePassXC Password Manager para uso local ou em integrações de CI\CD utilizar ferramentas como AWS Secrets Manager, HashiCorp Vault entre outras.
+>  O segredo do token é mostrado apenas uma vez. Não armazene o segredo em texto simples onde outros possam acessá-lo. \
+>Recomendo utlizar cofres de senha, como por exemplo KeePassXC Password Manager para uso local ou em integrações de CI\CD utilizar ferramentas como AWS Secrets Manager, HashiCorp Vault entre outras. \
 >Pois qualquer pessoa com esse token pode executar as ações autorizadas contra os recursos aos quais o token tem acesso.
 >
+
 # Ambiente pfSense
 
 ##
