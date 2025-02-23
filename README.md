@@ -9,6 +9,7 @@ Por padrão, a validação e emissão dos certificados pelo Let's Encrypt utiliz
 Para contornar essa limitação, podemos utilizar a validação via DNS-01 Challenge, que elimina a necessidade de portas abertas.
 
 ## Pré-requisitos
+
 Antes de iniciar o processo de emissão do certificado, certifique-se de que possui:
 
 ✅ Um domínio registrado e gerenciado em um provedor compatível (exemplo: Cloudflare).\
@@ -17,9 +18,11 @@ Antes de iniciar o processo de emissão do certificado, certifique-se de que pos
 
 
 ## O que é DNS-01 Challenge e como funciona?
+
 O DNS-01 Challenge é um método de validação usado pelo Let's Encrypt e outras Autoridades Certificadoras (CAs) para comprovar a posse de um domínio antes de emitir um certificado SSL.
 
 ## Fluxo da validação DNS-01 Challenge:
+
 O Let's Encrypt solicita a criação de um registro TXT no DNS do domínio, contendo um código de desafio único.
 A CA consulta o DNS para verificar se o registro TXT foi criado corretamente.
 Se a validação for bem-sucedida, o certificado é emitido.
@@ -36,7 +39,7 @@ Essa abordagem será documentada nos próximos passos, detalhando a configuraç�
 
 # Ambiente Cloudflare
 
-## 1️⃣ Criando um Token de API no Cloudflare
+## **1️ Criando um Token de API no Cloudflare**
 
 O pfSense precisa de permissões para modificar os registros DNS automaticamente, por este motivo deve ser gerado um Token de API com as devidas permissões.
 
