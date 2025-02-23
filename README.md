@@ -35,8 +35,6 @@ Se a validação for bem-sucedida, o certificado é emitido.
 
 Essa abordagem será documentada nos próximos passos, detalhando a configuração do ACME (Let's Encrypt) no pfSense, integração com Cloudflare.
 
-## PROXIMOS PASSOS (EM ANDAMENTO)
-
 # Ambiente Cloudflare
 
 ## **Criando um Token de API no Cloudflare**
@@ -79,6 +77,9 @@ O pfSense precisa de permissões para modificar os registros DNS automaticamente
 >Recomendo utlizar cofres de senha, como por exemplo KeePassXC Password Manager para uso local ou em integrações de CI\CD utilizar ferramentas como AWS Secrets Manager, HashiCorp Vault entre outras. \
 >Pois qualquer pessoa com esse token pode executar as ações autorizadas contra os recursos aos quais o token tem acesso.
 >
+
+# PRÓXIMOS PASSOS (EM ANDAMENTO)
+
 
 # Ambiente pfSense
 
