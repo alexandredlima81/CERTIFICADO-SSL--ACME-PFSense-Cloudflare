@@ -70,7 +70,7 @@ Selecione Criar Token para gerar o segredo do token.
 Copie o segredo para um local seguro.
 
 >
->**Aviso!**
+>⚠️**Aviso!**⚠️
 >
 >  O segredo do token é mostrado apenas uma vez. Não armazene o segredo em texto simples onde outros possam acessá-lo. \
 >Recomendo utlizar cofres de senha, como por exemplo KeePassXC Password Manager para uso local ou em integrações de CI\CD utilizar ferramentas como AWS Secrets Manager, HashiCorp Vault entre outras. \
