@@ -37,7 +37,7 @@ Essa abordagem será documentada nos próximos passos, detalhando a configuraç�
 
 ## Considerações Finais
 (EM ANDAMENTO)
-## Links úteis
+## Links de referência
 
 https://letsencrypt.org/docs/challenge-types/?utm_source=chatgpt.com
 https://community.cloudflare.com/t/cloudflare-lets-encrypt-pfsense/118198/5?utm_source=chatgpt.com
