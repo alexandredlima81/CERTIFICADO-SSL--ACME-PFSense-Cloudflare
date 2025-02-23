@@ -44,9 +44,10 @@ O pfSense precisa de permissões para modificar os registros DNS automaticamente
 **1.** Acesse o Cloudflare Dashboard.
 
 **2.** Vá para: 
+```
   - My **Profile** > **API Tokens** (para tokens de usuário) 
   - (Opcional) **Manage Account** > **API Tokens** (para tokens de conta)
-    
+```    
 **3.** Clique em **"Create Token"**.
 
 **4.** Escolha **"Create Cutom Token"** clicando em **"Get started"**.
