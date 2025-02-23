@@ -63,7 +63,7 @@ O pfSense precisa de permissões para modificar os registros DNS automaticamente
    
 **9.** Clique em "Continuar", revise e "Criar Token".
     
-**10.** Copie o segredo para um local seguro e configure o Certbot para usá-lo. 
+**10.** Copie o segredo para um local seguro. 
 
 >
 >⚠️**Aviso!**⚠️
