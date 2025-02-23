@@ -24,9 +24,9 @@ O Let's Encrypt solicita a criação de um registro TXT no DNS do domínio, cont
 A CA consulta o DNS para verificar se o registro TXT foi criado corretamente.
 Se a validação for bem-sucedida, o certificado é emitido.
 
-Vantagens do DNS-01:
-✅ Dispensa a abertura de portas (80 ou 443)
-✅ Permite emitir certificados wildcard (exemplo: *.hirostack.com)
+**Vantagens do DNS-01:**
+✅ Dispensa a abertura de portas (80 ou 443)\
+✅ Permite emitir certificados wildcard (exemplo: *.hirostack.com)\
 ✅ Automatização possível com provedores de DNS compatíveis (Cloudflare, AWS Route 53, GoDaddy, etc.)
 
 Essa abordagem será documentada nos próximos passos, detalhando a configuração do ACME (Let's Encrypt) no pfSense, integração com Cloudflare.
