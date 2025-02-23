@@ -32,7 +32,7 @@ Se a validação for bem-sucedida, o certificado é emitido.
 
 Essa abordagem será documentada nos próximos passos, detalhando a configuração do ACME (Let's Encrypt) no pfSense, integração com Cloudflare.
 
-## (EM ANDAMENTO)
+## PROXIMOS PASSOS (EM ANDAMENTO)
 
 
 ## Considerações Finais
