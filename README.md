@@ -82,11 +82,13 @@ O pfSense precisa de permissões para modificar os registros DNS automaticamente
 
 **12.**Valide testando o token
 Para confirmar que seu token está funcionando corretamente, copie e cole o comando CURL como no exemplo de saida apresentado pela Cloudflare em um terminal.
-´´´
+
+```
 curl -X GET "https://api.cloudflare.com/client/v4/user/tokens/verify" \
      -H "Authorization: Bearer 7asdffhS4tP4fQWErtYdZ5tr9Y0tRt7_FJKUNBd" \
      -H "Content-Type:application/json"
-´´´     
+```
+
 # PRÓXIMOS PASSOS (EM ANDAMENTO)
 
 
