@@ -39,7 +39,7 @@ Essa abordagem será documentada nos próximos passos, detalhando a configuraç�
 
 # Ambiente Cloudflare
 
-## ** Criando um Token de API no Cloudflare**
+## **Criando um Token de API no Cloudflare**
 
 O pfSense precisa de permissões para modificar os registros DNS automaticamente, por este motivo deve ser gerado um Token de API com as devidas permissões.
 
