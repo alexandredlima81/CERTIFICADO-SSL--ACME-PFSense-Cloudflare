@@ -43,27 +43,27 @@ Essa abordagem será documentada nos próximos passos, detalhando a configuraç�
 
 O pfSense precisa de permissões para modificar os registros DNS automaticamente, por este motivo deve ser gerado um Token de API com as devidas permissões.
 
-**1. Acesse o Cloudflare Dashboard.
+**1.** Acesse o Cloudflare Dashboard.
 
-**2. Vá para: 
+**2.** Vá para: 
   - My Profile > API Tokens (para tokens de usuário) 
   - Manage Account > API Tokens (para tokens de conta)
     
-3. Clique em "Criar Token".
+**3.** Clique em "Criar Token".
 
-4. Escolha "Criar Token Personalizado".
+**4.** Escolha "Criar Token Personalizado".
    
-6. Defina as permissões: 
+**6.** Defina as permissões: 
   - Zona → DNS → Editar (permite criar e excluir registros TXT para validação).
     
-6. Selecione os recursos: 
+**7.** Selecione os recursos: 
   - Inclua apenas as zonas específicas que o Let's Encrypt usará.
     
-7. (Opcional) Restrinja por IP para maior segurança.
+**8.** (Opcional) Restrinja por IP para maior segurança.
    
-8. Clique em "Continuar", revise e "Criar Token".
+**9.** Clique em "Continuar", revise e "Criar Token".
     
-9. Copie o segredo para um local seguro e configure o Certbot para usá-lo. 
+**10.** Copie o segredo para um local seguro e configure o Certbot para usá-lo. 
 
 >
 >⚠️**Aviso!**⚠️
