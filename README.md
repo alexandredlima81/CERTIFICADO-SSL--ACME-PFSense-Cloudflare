@@ -120,9 +120,9 @@ O **Zone ID** e o **Account ID** são informações adicionais disponíveis na a
 **Passo 3:** Criar o Certificado SSL
   -	Vá para Services → ACME Certificates → Certificates.
   -	Clique em Add e configure:
-      o	Domain Name: **nomedoseudominio.com**
-      o	Alt Names: **pve.nomedoseudominio.com**, **zabbix.nomedoseudominio.com**, **jenkins.nomedoseudominio.com**
-      o	Method de validação:
+      o	Domain Name: **nomedoseudominio.com** \
+      o	Alt Names: **pve.nomedoseudominio.com**, **zabbix.nomedoseudominio.com**, **jenkins.nomedoseudominio.com** \
+      o	Method de validação: \
   - DNS-01 (se tiver controle do DNS, ex.: Cloudflare, Route53)
     
 3.	Salve e clique em Issue/Renew.
