@@ -75,7 +75,7 @@ O pfSense precisa de permissões para modificar os registros DNS automaticamente
 **Passo 11:** Copie o segredo para um local seguro. 
 
 >
->⚠️**Aviso!**⚠️
+>⚠️ Aviso! ⚠️
 >
 >  O segredo do token é mostrado apenas uma vez.
 >Não armazene o segredo em texto simples onde outros possam acessá-lo. \
