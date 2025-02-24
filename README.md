@@ -43,36 +43,36 @@ Essa abordagem será documentada nos próximos passos, detalhando a configuraç�
 
 O pfSense precisa de permissões para modificar os registros DNS automaticamente, por este motivo deve ser gerado um Token de API com as devidas permissões.
 
-**1.** Acesse o Cloudflare Dashboard.
+**Passo 1:** Acesse o Cloudflare **Dashboard**.
 
-**2.** Vá para: 
+**Passo 2:** Vá para: 
   - My **Profile** > **API Tokens** (para tokens de usuário) 
   - (Opcional) **Manage Account** > **API Tokens** (para tokens de conta)
    
-**3.** Clique em **"Create Token"**.
+**Passo 3:** Clique em **"Create Token"**.
 
-**4.** Escolha **"Create Cutom Token"** clicando em **"Get started"**.
+**Passo 4:** Escolha **"Create Cutom Token"** clicando em **"Get started"**.
 
-**5.** Defina um Nome em **"Token Name"**:
+**Passo 5:** Defina um Nome em **"Token Name"**:
    - Inclua um nome de referência, (ex: **pfSense**).
 
-**6.** Defina as Permissões em **"Permissios"**:
+**Passo 6:** Defina as Permissões em **"Permissios"**:
   - Permitindo criar e excluir registros TXT para validação.
   - **Zona** → **DNS** → **Edit** 
     
-**7.** Selecione os Recursos da Zona em **"Zone Resources"**: 
+**Passo 7:** Selecione os Recursos da Zona em **"Zone Resources"**: 
   - Inclua apenas as zonas específicas que o Let's Encrypt usará, (ex: **nomedoseudominio.com**).
   - **Include** → **Specific zone** → **nomedoseudominio.com**
     
-**8.** (Opcional) Filtragem de endereço IP do cliente em **"Client IP Address Filtering"**
+**Passo 8:** (Opcional) Filtragem de endereço IP do cliente em **"Client IP Address Filtering"**
   - Permite resgtingir o uso da API por IP para maior segurança.
 
-**9.** (Opcional) Definir o TTL do Token de API em **"TTL"**
+**Passo 9.** (Opcional) Definir o TTL do Token de API em **"TTL"**
   - Permite definir por quanto tempo esse token permanecerá ativo.
    
-**10.** Clique em **"Continue to summary"**, revise e confirme em **"Create Token"**.
+**Passo 10:** Clique em **"Continue to summary"**, revise e confirme em **"Create Token"**.
     
-**11.** Copie o segredo para um local seguro. 
+**Passo 11:** Copie o segredo para um local seguro. 
 
 >
 >⚠️**Aviso!**⚠️
@@ -83,7 +83,7 @@ O pfSense precisa de permissões para modificar os registros DNS automaticamente
 >Pois qualquer pessoa com esse token pode executar as ações autorizadas contra os recursos aos quais o token tem acesso.
 >
 
-**12.** Valide testando o token
+**Passo 12:** Valide testando o token
 
 Para confirmar que seu token está funcionando corretamente, copie e cole o comando CURL como no exemplo de saida apresentado pela Cloudflare em um terminal.
 
@@ -96,23 +96,19 @@ curl -X GET "https://api.cloudflare.com/client/v4/user/tokens/verify" \
 
 O **Zone ID** e o **Account ID** são informações adicionais disponíveis na aba **Overview** seguimento **API** do domínio no Cloudflare. Esses dados são necessários para as próximas etapas de configuração e autenticação do ACME no pfSense.
 
-**1.** **Zone ID** e o **Account ID**
+**Passo 1:** Encontrar **Zone ID** e o **Account ID**
 
-  Para encontrar o **Zone ID** e o **Account ID**: \
   - Acesse o painel do **Cloudflare**.
   - Clique no **domínio** desejado (ex:**nomedoseudominio.com**).
   - A aba **Overview**, por default estara aberta, o **Zone ID** e **Account ID** se encontram na parte inferior a direita.
   - Copie o **Zone ID** e **Account ID** para um local seguro.
 
+# Ambiente pfSense
+
 
 
 
 # PRÓXIMOS PASSOS (EM ANDAMENTO)
-
-
-# Ambiente pfSense
-
-##
 
 ## Considerações Finais
 (EM ANDAMENTO)
