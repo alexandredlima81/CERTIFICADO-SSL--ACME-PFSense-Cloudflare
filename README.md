@@ -109,17 +109,17 @@ O **Zone ID** e o **Account ID** são informações adicionais disponíveis na a
 
 ## **Configurando o Let's Encrypt (ACME) no pfSense**
 
-**Passo 1:** Instalar o Pacote ACME
+**Passo 1:** Instalar o **Pacote ACME**
   -	No **pfSense**, vá para **System** → **Package Manager** → **Available Packages**.
   -	Instale o pacote **acme**.
 
-**Passo 2:** Criar uma Conta no Let's Encrypt
+**Passo 2:** Criar uma **Conta** no **Let's Encrypt**
   -	Vá para **Services** → **ACME Certificates**.
   -	Clique na aba **Account Keys** e adicione uma nova conta.
   -	Escolha o servidor **Let's Encrypt Production**.
   -	Clique em **Register ACME Account Key**.
 
-**Passo 3:** Criar o Certificado SSL
+**Passo 3:** Criar o **Certificado SSL**
   -	Vá para Services → ACME Certificates → Certificates.
   -	Clique em Add e configure:
       o	Domain Name: **nomedoseudominio.com** \
