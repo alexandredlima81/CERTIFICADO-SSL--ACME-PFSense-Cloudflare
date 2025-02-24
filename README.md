@@ -72,7 +72,7 @@ O pfSense precisa de permissões para modificar os registros DNS automaticamente
    
 **Passo 10:** Clique em **"Continue to summary"**, revise e confirme em **"Create Token"**.
     
-**Passo 11:** Copie o segredo para um local seguro. 
+**Passo 11:** Copie o segredo para um local seguro. \
 
 >
 >⚠️ Aviso! ⚠️
