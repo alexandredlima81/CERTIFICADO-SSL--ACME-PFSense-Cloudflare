@@ -46,8 +46,8 @@ O pfSense precisa de permissões para modificar os registros DNS automaticamente
 **Passo 1:** Acesse o Cloudflare **Dashboard**.
 
 **Passo 2:** Vá para: 
-  - My **Profile** > **API Tokens** (para tokens de usuário) 
-  - (Opcional) **Manage Account** > **API Tokens** (para tokens de conta)
+  - My **Profile** → **API Tokens** (para tokens de usuário) 
+  - (Opcional) **Manage Account** → **API Tokens** (para tokens de conta)
    
 **Passo 3:** Clique em **"Create Token"**.
 
@@ -103,21 +103,21 @@ O **Zone ID** e o **Account ID** são informações adicionais disponíveis na a
   - A aba **Overview**, por default estara aberta, o **Zone ID** e **Account ID** se encontram na parte inferior a direita.
   - Copie o **Zone ID** e **Account ID** para um local seguro.
 
-# ⚠️ PRÓXIMOS PASSOS (EM REVISÃO)
+# ⚠️ PRÓXIMOS PASSOS (EM REVISÃO) ⚠️ 
 
 # Ambiente pfSense
 
 ## **Configurando o Let's Encrypt (ACME) no pfSense**
 
 **Passo 1:** Instalar o Pacote ACME
-  -	No pfSense, vá para System → Package Manager → Available Packages.
-  -	Instale o pacote acme.
+  -	No **pfSense**, vá para **System** → **Package Manager** → **Available Packages**.
+  -	Instale o pacote **acme**.
 
 **Passo 2:** Criar uma Conta no Let's Encrypt
-  -	Vá para Services → ACME Certificates.
-  -	Clique na aba Account Keys e adicione uma nova conta.
-  -	Escolha o servidor Let's Encrypt Production.
-  -	Clique em Register ACME Account Key.
+  -	Vá para **Services** → **ACME Certificates**.
+  -	Clique na aba **Account Keys** e adicione uma nova conta.
+  -	Escolha o servidor **Let's Encrypt Production**.
+  -	Clique em **Register ACME Account Key**.
 
 **Passo 3:** Criar o Certificado SSL
   -	Vá para Services → ACME Certificates → Certificates.
@@ -134,12 +134,11 @@ O **Zone ID** e o **Account ID** são informações adicionais disponíveis na a
   - Baixe o certificado (.crt) e a chave (.key).
   - Copie os arquivos para o destino desejado ou automatize este passo.
 
-
-
-# ⚠️ PRÓXIMOS PASSOS (EM ANDAMENTO)
+# ⚠️ PRÓXIMOS PASSOS (EM ANDAMENTO) ⚠️ 
 
 ## Considerações Finais
 (EM ANDAMENTO)
+
 ## Links de referência
 
 https://letsencrypt.org/docs/challenge-types/?utm_source=chatgpt.com \
