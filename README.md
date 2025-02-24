@@ -102,6 +102,8 @@ O **Zone ID** e o **Account ID** são informações adicionais disponíveis na a
   - Clique no **domínio** desejado (ex:**nomedoseudominio.com**).
   - A aba **Overview**, por default estara aberta, o **Zone ID** e **Account ID** se encontram na parte inferior a direita.
   - Copie o **Zone ID** e **Account ID** para um local seguro.
+  - 
+# PRÓXIMOS PASSOS (EM REVISÃO)
 
 # Ambiente pfSense
 
@@ -124,8 +126,13 @@ O **Zone ID** e o **Account ID** são informações adicionais disponíveis na a
       o	Alt Names: **pve.nomedoseudominio.com**, **zabbix.nomedoseudominio.com**, **jenkins.nomedoseudominio.com** \
       o	Method de validação: \
   - DNS-01 (se tiver controle do DNS, ex.: Cloudflare, Route53)
-    
-3.	Salve e clique em Issue/Renew.
+  - Salve e clique em Issue/Renew.
+
+**Passo 4:** Exportar o Certificado
+  Após a geração do certificado:
+  - Vá para System → Cert Manager → Certificates.
+  - Baixe o certificado (.crt) e a chave (.key).
+  - Copie os arquivos para o destino desejado ou automatize este passo.
 
 
 
