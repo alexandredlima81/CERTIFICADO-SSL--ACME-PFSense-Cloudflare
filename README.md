@@ -122,11 +122,33 @@ O **Zone ID** e o **Account ID** são informações adicionais disponíveis na a
 **Passo 3:** Criar o **Certificado SSL**
   -	Vá para Services → ACME Certificates → Certificates.
   -	Clique em Add e configure:
-      o	Domain Name: **nomedoseudominio.com** \
-      o	Alt Names: **pve.nomedoseudominio.com**, **zabbix.nomedoseudominio.com**, **jenkins.nomedoseudominio.com** \
-      o	Method de validação: \
-  - DNS-01 (se tiver controle do DNS, ex.: Cloudflare, Route53)
+      o	Em Edit Certificate options
+   	      → Name: Defina um nome ex:**nomedoseudominio.com** \
+      o	Domain SAN list
+   	      → Table
+   	          → Domainname: Defina o nome do dominio **nomedoseudominio.com**  \
+   	               → Method:  Selecione **DNS-Cloudflare**
+   	                            Token:	Token Auth: Cloudflare API Token (https://dash.cloudflare.com/profile/api-tokens):
+                                Token Zone ID:	Token Auth: Cloudflare API Zone ID for single zone certificates
+                                Token Account ID:	Token Auth: Cloudflare API Account ID for multi-zone certificates
+                                Global Key:	Global Auth: Cloudflare Global API Key (https://dash.cloudflare.com/profile/api-tokens)
+                                Global Email:	Global Auth: Cloudflare API Email Address
+                                Enable DNS alias mode:	(Optional) Adds the --challenge-alias flag to the acme.sh call.
+                                Enable DNS domain alias mode:	(Optional) Uses the challenge domain alias value as --domain-alias instead in the acme.sh call.
+   	      → Clique em Add  (Para uma segunda entrada do wildcard)
+   	          → Domainname: Defina o nome do dominio ** *.nomedoseudominio.com**  \
+   	               → Method:  Selecione **DNS-Cloudflare**
+   	                            Token:	Token Auth: Cloudflare API Token (https://dash.cloudflare.com/profile/api-tokens):
+                                Token Zone ID:	Token Auth: Cloudflare API Zone ID for single zone certificates
+                                Token Account ID:	Token Auth: Cloudflare API Account ID for multi-zone certificates
+                                Global Key:	Global Auth: Cloudflare Global API Key (https://dash.cloudflare.com/profile/api-tokens)
+                                Global Email:	Global Auth: Cloudflare API Email Address
+                                Enable DNS alias mode:	(Optional) Adds the --challenge-alias flag to the acme.sh call.
+                                Enable DNS domain alias mode:	(Optional) Uses the challenge domain alias value as --domain-alias instead in the acme.sh call.   	    
+      o	Em Certificate renewal after: Defina após quantos dias o Certificado pode ser renovado.
   - Salve e clique em Issue/Renew.
+
+
 
 **Passo 4:** Exportar o Certificado
   Após a geração do certificado:
