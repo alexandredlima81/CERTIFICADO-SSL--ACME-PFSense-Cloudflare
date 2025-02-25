@@ -120,33 +120,34 @@ O **Zone ID** e o **Account ID** são informações adicionais disponíveis na a
   -	Clique em **Register ACME Account Key**.
 
 **Passo 3:** Criar o **Certificado SSL**
-  -	Vá para Services → ACME Certificates → Certificates.
-  -	Clique em Add e configure:
-      o	Em Edit Certificate options
-   	      → Name: Defina um nome ex:**nomedoseudominio.com** \
-      o	Domain SAN list
-   	      → Table
-   	          → Domainname: Defina o nome do dominio **nomedoseudominio.com**  \
-   	               → Method:  Selecione **DNS-Cloudflare**
-   	                            Token:	Token Auth: Cloudflare API Token (https://dash.cloudflare.com/profile/api-tokens):
-                                Token Zone ID:	Token Auth: Cloudflare API Zone ID for single zone certificates
-                                Token Account ID:	Token Auth: Cloudflare API Account ID for multi-zone certificates
-                                Global Key:	Global Auth: Cloudflare Global API Key (https://dash.cloudflare.com/profile/api-tokens)
-                                Global Email:	Global Auth: Cloudflare API Email Address
-                                Enable DNS alias mode:	(Optional) Adds the --challenge-alias flag to the acme.sh call.
-                                Enable DNS domain alias mode:	(Optional) Uses the challenge domain alias value as --domain-alias instead in the acme.sh call.
-   	      → Clique em Add  (Para uma segunda entrada do wildcard)
-   	          → Domainname: Defina o nome do dominio ** *.nomedoseudominio.com**  \
-   	               → Method:  Selecione **DNS-Cloudflare**
-   	                            Token:	Token Auth: Cloudflare API Token (https://dash.cloudflare.com/profile/api-tokens):
-                                Token Zone ID:	Token Auth: Cloudflare API Zone ID for single zone certificates
-                                Token Account ID:	Token Auth: Cloudflare API Account ID for multi-zone certificates
-                                Global Key:	Global Auth: Cloudflare Global API Key (https://dash.cloudflare.com/profile/api-tokens)
-                                Global Email:	Global Auth: Cloudflare API Email Address
-                                Enable DNS alias mode:	(Optional) Adds the --challenge-alias flag to the acme.sh call.
-                                Enable DNS domain alias mode:	(Optional) Uses the challenge domain alias value as --domain-alias instead in the acme.sh call.   	    
-      o	Em Certificate renewal after: Defina após quantos dias o Certificado pode ser renovado.
-  - Salve e clique em Issue/Renew.
+- Vá para Services → ACME Certificates → Certificates.
+- Clique em Add e configure:
+    - **Edit Certificate options**
+        - **Name:** Defina um nome ex: `nomedoseudominio.com`
+    - **Domain SAN list**
+        - **Table**
+            - **Domainname:** Defina o nome do domínio `nomedoseudominio.com`
+            - **Method:** Selecione **DNS-Cloudflare**
+                - **Token:** Cloudflare API Token (https://dash.cloudflare.com/profile/api-tokens)
+                - **Token Zone ID:** Cloudflare API Zone ID
+                - **Token Account ID:** Cloudflare API Account ID
+                - **Global Key:** Cloudflare Global API Key
+                - **Global Email:** Cloudflare API Email Address
+                - **Enable DNS alias mode:** (Opcional) --challenge-alias flag
+                - **Enable DNS domain alias mode:** (Opcional) --domain-alias flag
+        - Clique em **Add** (Para uma segunda entrada do wildcard)
+            - **Domainname:** `*.nomedoseudominio.com`
+            - **Method:** Selecione **DNS-Cloudflare**
+                - **Token:** Cloudflare API Token
+                - **Token Zone ID:** Cloudflare API Zone ID
+                - **Token Account ID:** Cloudflare API Account ID
+                - **Global Key:** Cloudflare Global API Key
+                - **Global Email:** Cloudflare API Email Address
+                - **Enable DNS alias mode:** (Opcional) --challenge-alias flag
+                - **Enable DNS domain alias mode:** (Opcional) --domain-alias flag
+    - **Certificate renewal after:** Defina após quantos dias o Certificado pode ser renovado.
+- Salve e clique em **Issue/Renew**.
+
 
 
 
