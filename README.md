@@ -125,7 +125,8 @@ O **Zone ID** e o **Account ID** são informações adicionais disponíveis na a
            `nomedoseudominio.com`
     - **"Domain SAN list"**
         - **"Table"**
-            - **"Domainname:"** Defina o nome do domínio `nomedoseudominio.com`
+            - **"Domainname:"** Defina o nome do domínio \
+              `nomedoseudominio.com`
             - **"Method:"** Selecione **"DNS-Cloudflare"**
                 - **"Token:"** Cloudflare API Token (https://dash.cloudflare.com/profile/api-tokens) \
                   `insira sua API Token`
