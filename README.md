@@ -143,7 +143,8 @@ O **Zone ID** e o **Account ID** são informações adicionais disponíveis na a
                 - **"Enable DNS domain alias mode:"** (Opcional) --domain-alias flag \
                   `(opcional)`
         - Clique em **"Add"** (Para uma segunda entrada do wildcard)
-            - **"Domainname:"** `*.nomedoseudominio.com`
+            - **"Domainname:"**
+              `*.nomedoseudominio.com`
             - **"Method:"** Selecione **"DNS-Cloudflare"**
                 - **"Token:"** Cloudflare API Token
                   `insira sua API Token`
