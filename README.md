@@ -121,24 +121,25 @@ O **Zone ID** e o **Account ID** são informações adicionais disponíveis na a
 - Vá para **"Services"** → **"ACME Certificates"** → **"Certificates"**
 - Clique em **"Add"** e configure:
     - **"Edit Certificate options"**
-        - **"Name:"** Defina um nome ex: `nomedoseudominio.com`
+        - **"Name:"** Defina um nome. \
+           `nomedoseudominio.com`
     - **"Domain SAN list"**
         - **"Table"**
             - **"Domainname:"** Defina o nome do domínio `nomedoseudominio.com`
             - **"Method:"** Selecione **"DNS-Cloudflare"**
-                - **"Token:"** Cloudflare API Token (https://dash.cloudflare.com/profile/api-tokens)
+                - **"Token:"** Cloudflare API Token (https://dash.cloudflare.com/profile/api-tokens) \
                   `insira sua API Token`
-                - **"Token Zone ID:"** Cloudflare API Zone ID
+                - **"Token Zone ID:"** Cloudflare API Zone ID \
                   `insira seu Token Zone ID`
-                - **"Token Account ID:"** Cloudflare API Account ID
+                - **"Token Account ID:"** Cloudflare API Account ID \
                   `insira seu Token Account ID`
-                - **"Global Key:"** Cloudflare Global API Key
+                - **"Global Key:"** Cloudflare Global API Key \
                   `(opcional)`
-                - **"Global Email:"** Cloudflare API Email Address
+                - **"Global Email:"** Cloudflare API Email Address \
                   `insira o e-mail cadastrado na Cloudflare`
-                - **"Enable DNS alias mode:"** (Opcional) --challenge-alias flag
+                - **"Enable DNS alias mode:"** (Opcional) --challenge-alias flag \
                   `(opcional)`
-                - **"Enable DNS domain alias mode:"** (Opcional) --domain-alias flag
+                - **"Enable DNS domain alias mode:"** (Opcional) --domain-alias flag \
                   `(opcional)`
         - Clique em **"Add"** (Para uma segunda entrada do wildcard)
             - **"Domainname:"** `*.nomedoseudominio.com`
