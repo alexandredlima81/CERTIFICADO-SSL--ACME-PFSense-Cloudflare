@@ -14,7 +14,7 @@ Para contornar essa limitação, podemos utilizar a validação via DNS-01 Chall
 
 Antes de iniciar o processo de emissão do certificado, certifique-se de que possui:
 
-✅ Um domínio registrado e gerenciado em um provedor compatível (exemplo: 'Cloudflare').\
+✅ Um domínio registrado e gerenciado em um provedor compatível (exemplo: **Cloudflare**).\
 ✅ Acesso administrativo ao pfSense, com o pacote ACME instalado.\
 ✅ Credenciais de API do provedor de DNS para automação da validação DNS-01.
 
@@ -32,8 +32,8 @@ Se a validação for bem-sucedida, o certificado é emitido.
 **Vantagens do DNS-01 Challenge:**
 
 ✅ Dispensa a abertura de portas (80 ou 443)\
-✅ Permite emitir certificados wildcard (exemplo: '*.nomedodominio.com')\
-✅ Automatização possível com provedores de DNS compatíveis (Cloudflare, AWS Route 53, GoDaddy, etc.)
+✅ Permite emitir certificados wildcard (exemplo: ** *.nomedodominio.com **)\
+✅ Automatização possível com provedores de DNS compatíveis (**Cloudflare, AWS Route 53, GoDaddy, etc...**)
 
 Essa abordagem será documentada nos próximos passos, detalhando a configuração do ACME (Let's Encrypt) no pfSense, integração com Cloudflare.
 
@@ -46,22 +46,22 @@ O pfSense precisa de permissões para modificar os registros DNS automaticamente
 **Passo 1:** Acesse o Cloudflare **Dashboard**.
 
 **Passo 2:** Vá para: 
-  - My **Profile** → **API Tokens** (para tokens de usuário) 
-  - (Opcional) **Manage Account** → **API Tokens** (para tokens de conta)
+  - My **Profile** → **API Tokens** (Para tokens de usuário) 
+  - (Opcional) **Manage Account** → **API Tokens** (Para tokens de conta)
    
 **Passo 3:** Clique em **"Create Token"**.
 
 **Passo 4:** Escolha **"Create Cutom Token"** clicando em **"Get started"**.
 
 **Passo 5:** Defina um Nome em **"Token Name"**:
-   - Inclua um nome de referência, (ex: 'pfSense').
+   - Inclua um nome de referência, (ex: `pfSense`).
 
 **Passo 6:** Defina as Permissões em **"Permissios"**:
   - Permitindo criar e excluir registros TXT para validação.
   - **Zona** → **DNS** → **Edit** 
     
 **Passo 7:** Selecione os Recursos da Zona em **"Zone Resources"**: 
-  - Inclua apenas as zonas específicas que o Let's Encrypt usará, (ex: 'nomedoseudominio.com').
+  - Inclua apenas as zonas específicas que o Let's Encrypt usará, (ex: `nomedoseudominio.com`).
   - **Include** → **Specific zone** → 'nomedoseudominio.com'
     
 **Passo 8:** (Opcional) Filtragem de endereço IP do cliente em **"Client IP Address Filtering"**
