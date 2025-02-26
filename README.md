@@ -58,7 +58,7 @@ O pfSense precisa de permissões para modificar os registros DNS automaticamente
 
 **Passo 6:** Defina as Permissões em **"Permissios"**:
   - Permitindo criar e excluir registros TXT para validação.
-  - **"Zona"** → **"DNS"** → **Edit** 
+  - **"Zona"** → **"DNS"** → **"Edit"** 
     
 **Passo 7:** Selecione os Recursos da Zona em **"Zone Resources"**: 
   - Inclua apenas as zonas específicas que o Let's Encrypt usará, (ex: `nomedoseudominio.com`).
@@ -120,39 +120,39 @@ O **Zone ID** e o **Account ID** são informações adicionais disponíveis na a
 **Passo 3:** Criar o **Certificado SSL**
 - Vá para **"Services"** → **"ACME Certificates"** → **"Certificates"**
 - Clique em **"Add"** e configure:
-    - **Edit Certificate options**
-        - **Name:** Defina um nome ex: `nomedoseudominio.com`
-    - **Domain SAN list**
-        - **Table**
-            - **Domainname:** Defina o nome do domínio `nomedoseudominio.com`
-            - **Method:** Selecione **DNS-Cloudflare**
-                - **Token:** Cloudflare API Token (https://dash.cloudflare.com/profile/api-tokens)
-                - **Token Zone ID:** Cloudflare API Zone ID
-                - **Token Account ID:** Cloudflare API Account ID
-                - **Global Key:** Cloudflare Global API Key
-                - **Global Email:** Cloudflare API Email Address
-                - **Enable DNS alias mode:** (Opcional) --challenge-alias flag
-                - **Enable DNS domain alias mode:** (Opcional) --domain-alias flag
-        - Clique em **Add** (Para uma segunda entrada do wildcard)
-            - **Domainname:** `*.nomedoseudominio.com`
-            - **Method:** Selecione **DNS-Cloudflare**
-                - **Token:** Cloudflare API Token
-                - **Token Zone ID:** Cloudflare API Zone ID
-                - **Token Account ID:** Cloudflare API Account ID
-                - **Global Key:** Cloudflare Global API Key
-                - **Global Email:** Cloudflare API Email Address
-                - **Enable DNS alias mode:** (Opcional) --challenge-alias flag
-                - **Enable DNS domain alias mode:** (Opcional) --domain-alias flag
-    - **Certificate renewal after:** Defina após quantos dias o Certificado pode ser renovado.
-- Salve e clique em **Issue/Renew**.
+    - **"Edit Certificate options"**
+        - **"Name:"** Defina um nome ex: `nomedoseudominio.com`
+    - **"Domain SAN list"**
+        - **"Table"**
+            - **"Domainname:"** Defina o nome do domínio `nomedoseudominio.com`
+            - **"Method:"** Selecione **"DNS-Cloudflare"**
+                - **"Token:"** Cloudflare API Token (https://dash.cloudflare.com/profile/api-tokens)
+                - **"Token Zone ID:"** Cloudflare API Zone ID
+                - **"Token Account ID:"** Cloudflare API Account ID
+                - **"Global Key:"** Cloudflare Global API Key
+                - **"Global Email:"** Cloudflare API Email Address
+                - **"Enable DNS alias mode:"** (Opcional) --challenge-alias flag
+                - **"Enable DNS domain alias mode:"** (Opcional) --domain-alias flag
+        - Clique em **"Add"** (Para uma segunda entrada do wildcard)
+            - **"Domainname:"** `*.nomedoseudominio.com`
+            - **"Method:"** Selecione **"DNS-Cloudflare"**
+                - **"Token:"** Cloudflare API Token
+                - **"Token Zone ID:"** Cloudflare API Zone ID
+                - **"Token Account ID:"** Cloudflare API Account ID
+                - **"Global Key:"** Cloudflare Global API Key
+                - **"Global Email:"** Cloudflare API Email Address
+                - **"Enable DNS alias mode:"** (Opcional) --challenge-alias flag
+                - **"Enable DNS domain alias mode:"** (Opcional) --domain-alias flag
+    - **"Certificate renewal after:"** Defina após quantos dias o Certificado pode ser renovado.
+- Salve e clique em **"Issue/Renew"**.
 
 
 
 
 **Passo 4:** Exportar o Certificado
   Após a geração do certificado:
-  - Vá para System → Cert Manager → Certificates.
-  - Baixe o certificado (.crt) e a chave (.key).
+  - Vá para **"System"** → **"Cert Manager"** → **"Certificates"**.
+  - Baixe o certificado (**.crt**) e a chave (**.key**).
   - Copie os arquivos para o destino desejado ou automatize este passo.
 
 # ⚠️ PRÓXIMOS PASSOS (EM ANDAMENTO) ⚠️ 
