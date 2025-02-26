@@ -127,27 +127,39 @@ O **Zone ID** e o **Account ID** são informações adicionais disponíveis na a
             - **"Domainname:"** Defina o nome do domínio `nomedoseudominio.com`
             - **"Method:"** Selecione **"DNS-Cloudflare"**
                 - **"Token:"** Cloudflare API Token (https://dash.cloudflare.com/profile/api-tokens)
+                  `insira sua API Token`
                 - **"Token Zone ID:"** Cloudflare API Zone ID
+                  `insira seu Token Zone ID`
                 - **"Token Account ID:"** Cloudflare API Account ID
+                  `insira seu Token Account ID`
                 - **"Global Key:"** Cloudflare Global API Key
+                  `(opcional)`
                 - **"Global Email:"** Cloudflare API Email Address
+                  `insira o e-mail cadastrado na Cloudflare`
                 - **"Enable DNS alias mode:"** (Opcional) --challenge-alias flag
+                  `(opcional)`
                 - **"Enable DNS domain alias mode:"** (Opcional) --domain-alias flag
+                  `(opcional)`
         - Clique em **"Add"** (Para uma segunda entrada do wildcard)
             - **"Domainname:"** `*.nomedoseudominio.com`
             - **"Method:"** Selecione **"DNS-Cloudflare"**
                 - **"Token:"** Cloudflare API Token
+                  `insira sua API Token`
                 - **"Token Zone ID:"** Cloudflare API Zone ID
+                  `insira seu Token Zone ID`
                 - **"Token Account ID:"** Cloudflare API Account ID
+                  `insira seu Token Account ID`
                 - **"Global Key:"** Cloudflare Global API Key
+                  `(opcional)`
                 - **"Global Email:"** Cloudflare API Email Address
+                  `insira o e-mail cadastrado na Cloudflare`
                 - **"Enable DNS alias mode:"** (Opcional) --challenge-alias flag
+                  `(opcional)`
                 - **"Enable DNS domain alias mode:"** (Opcional) --domain-alias flag
+                  `(opcional)`
     - **"Certificate renewal after:"** Defina após quantos dias o Certificado pode ser renovado.
+      `exemplo: 30`
 - Salve e clique em **"Issue/Renew"**.
-
-
-
 
 **Passo 4:** Exportar o Certificado
   Após a geração do certificado:
