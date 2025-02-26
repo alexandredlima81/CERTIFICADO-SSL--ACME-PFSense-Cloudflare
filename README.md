@@ -32,7 +32,7 @@ Se a validação for bem-sucedida, o certificado é emitido.
 **Vantagens do DNS-01 Challenge:**
 
 ✅ Dispensa a abertura de portas (80 ou 443)\
-✅ Permite emitir certificados wildcard (exemplo: ** *.nomedodominio.com **)\
+✅ Permite emitir certificados wildcard (exemplo: `*.nomedodominio.com`)\
 ✅ Automatização possível com provedores de DNS compatíveis (**Cloudflare, AWS Route 53, GoDaddy, etc...**)
 
 Essa abordagem será documentada nos próximos passos, detalhando a configuração do **ACME (Let's Encrypt)** no **pfSense**, integração com **Cloudflare**.
