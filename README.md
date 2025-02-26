@@ -35,7 +35,7 @@ Se a validação for bem-sucedida, o certificado é emitido.
 ✅ Permite emitir certificados wildcard (exemplo: ** *.nomedodominio.com **)\
 ✅ Automatização possível com provedores de DNS compatíveis (**Cloudflare, AWS Route 53, GoDaddy, etc...**)
 
-Essa abordagem será documentada nos próximos passos, detalhando a configuração do ACME (Let's Encrypt) no pfSense, integração com Cloudflare.
+Essa abordagem será documentada nos próximos passos, detalhando a configuração do **ACME (Let's Encrypt)** no **pfSense**, integração com **Cloudflare**.
 
 # Ambiente Cloudflare
 
